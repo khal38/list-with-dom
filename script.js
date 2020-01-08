@@ -1,6 +1,7 @@
 var add = document.getElementById("add");
 var input = document.getElementById("champ");
 var ul = document.querySelector("ul");
+var removeButton = document.getElementsByClassName("del");
 
 
 var checkInputLenght = function () {
@@ -17,22 +18,21 @@ var ajouterArticle = function () {
     deleteButton.appendChild(textDeleteButton);
     li.appendChild(textLi);
     ul.appendChild(li)
-    ul.appendChild(deleteButton)
+    li.appendChild(deleteButton)
     input.value = " "
-    var lastC = ul.lastChild.innerHTML;
 
-console.log(lastC)
+
+    deleteButton.addEventListener("click",removeItem)
+
+    function removeItem () {
+        li.parentNode.removeChild(li)
+    }
+
 };
 
 
 
-if (document.body.classList.contains("del")) {
-    var removeButton = document.getElementsByClassName("del");
-    ul.removeChild("li");
-    function removeAfterClick() {
-        ul.removeChild(li)
-    };
-}
+
 
 
 
