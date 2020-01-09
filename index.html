@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +8,30 @@
     <title>Items List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <h1>My List</h1>
-    <input id="champ" type="text" placeholder="Ajouter un article">
-    <button id="add">Enter</button>
+    <div class="row inputer">
 
+        <div class="inputAdd inline fields">
 
-    <ul id="parentList">
-        
+            <div class="field ">
+                <input id="champ" type="text" placeholder="Ajouter un article">
+            </div>
 
-    </ul>
-    <script src="script.js"></script>
+            <div class="field ">
+                <button id="add">Enter</button>
+            </div>
+        </div>
 
+        <ul class=" col" id="parentList">
+            <li>fdf<button class="del">Delete</button></li>
+
+        </ul>
+
+        <script src="script.js"></script>
+    </div>
 </body>
+
 </html>
-
-

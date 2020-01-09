@@ -1,3 +1,80 @@
-h1{
-    ;
+html {
+    font-family: "Avenir Next", Helevetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.inputAdd {
+    display: flex;
+    justify-content: flex-start;
+
+    
+
+}
+
+input {
+    display: grid;
+    text-align: center;
+    padding-top: 30px;
+    width: 15em;
+    height: 40px;
+    font-size: 2em;
+    border-color: black;
+    border-radius: 5px;
+}
+
+#add {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: transform .2s; /* Animation */
+
+}
+
+.simple-form {
+    display: flex;
+    overflow-y: scroll;
+    padding-bottom: 1.25rem;
+}
+
+.del {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    list-style: none;
+}
+
+li:hover {
+    text-decoration: line-through;
+}
+
+.del:hover {
+    -webkit-transform: rotate(-7deg);
+}
+
+.add:hover{
+    transform: scale(3)
 }

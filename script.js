@@ -19,7 +19,7 @@ var ajouterArticle = function () {
     li.appendChild(textLi);
     ul.appendChild(li)
     li.appendChild(deleteButton)
-    input.value = " "
+    input.value = ""
 
 
     deleteButton.addEventListener("click",removeItem)
